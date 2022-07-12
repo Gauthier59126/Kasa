@@ -1,0 +1,23 @@
+.error-conteneur{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error{
+    font-size: 200px;
+    font-family: 'montserrat-bold';
+    height: 140px;
+}
+
+.error-message{
+    height: 50px;
+}
+
+.home-link{
+    height: 50px;
+    padding-top: 120px;
+    color: #FF6060;;
+}

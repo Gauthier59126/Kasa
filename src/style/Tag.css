@@ -1,0 +1,16 @@
+.div-tag{
+    border-radius: 13px;
+    color: white;
+    background-color: #FF6060;
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.tag-title{
+    margin: 4px;
+    font-size: 14px;
+}
