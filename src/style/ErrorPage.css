@@ -21,3 +21,23 @@
     padding-top: 120px;
     color: #FF6060;;
 }
+
+@media all and (max-width: 415px){
+
+    .error-conteneur{
+        align-items: center;
+    }
+
+    .error{
+        font-size: 100px;
+        height: 70px;
+    }
+
+    .error-message{
+        font-size: 20px;
+    }
+
+    .home-link{
+        padding-top: 50px;
+    }
+}

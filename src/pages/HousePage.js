@@ -14,9 +14,8 @@ function HousePage(props) {
     return (
     <div className='div-housepage'>        
         <div className='div-slider'>
-            <Slideshow pictures= {data.pictures}/>
+            <Slideshow key={data} pictures= {data.pictures}/>
         </div> 
-
         <div className='div-description'>
             <div className='div-title-location'>
                 <div className='div-title1'>{data.title}</div>
@@ -29,8 +28,8 @@ function HousePage(props) {
         </div>   
         <div className='div-tags-stars'>
             <div className='div-tags'>
-                {data.tags.map((tag) =>{
-                return <Tag tag={tag}/>
+                {data.tags.map((tag, e) =>{
+                return <Tag key={e} tag={tag}/>
                 })}
             </div>
             <div className='div-stars'>
@@ -38,7 +37,7 @@ function HousePage(props) {
             </div>
         </div>    
         <div className='div-description-equipment'>
-            <div className='div-description'><Collapse title={"Description"} description={data.description}/></div>
+            <div className='div-descriptions'><Collapse title={"Description"} description={data.description}/></div>
             <div className='div-equipement'><Collapse title={"Equipements"} description={data.equipments}/></div>    
             
         </div>

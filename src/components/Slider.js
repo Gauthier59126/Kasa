@@ -32,14 +32,14 @@ const Slideshow = (props) => {
 
     return (
         <div className="containerSlide">
-                <div class="lightbox" id="img1">
-                    {props.pictures.length >1? <a className='prev' onClick={prev} href="#img3" class="light-btn btn-prev">
+                <div className="lightbox" id="img1">
+                    {props.pictures.length >1? <a className='prev light-btn btn-prev' onClick={prev} href="#img3">
                         <FontAwesomeIcon className='prev' icon={faChevronLeft} size="4x" color='white'/></a> : <></>}
-                    <div class="contain-img">
-                        <img class="lightbox-image" src={props.pictures[index]} alt="Diaporama d'images"/>
-                        {props.pictures.length > 1? <h2 class="title"> {index +1}/{props.pictures.length}</h2> : <></> } 
+                    <div className="contain-img">
+                        <img className="lightbox-image" src={props.pictures[index]} alt="Diaporama d'images"/>
+                        {props.pictures.length > 1? <h2 className="title"> {index +1}/{props.pictures.length}</h2> : <></> } 
                     </div>                    
-                    {props.pictures.length > 1? <a className='next' onClick={next} href="#img2" class="light-btn btn-next">
+                    {props.pictures.length > 1? <a className='next light-btn btn-next' onClick={next} href="#img2">
                       <FontAwesomeIcon className='next' icon={faChevronRight} size="4x" color='white' /></a> : <></>}
                 </div>
         </div>

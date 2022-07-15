@@ -5,8 +5,8 @@ function Gallery(props){
 
     return (
         <div className="conteneur">
-            {props.logements.map((logement) =>{
-               return <Thumb logement={logement}/>
+            {props.logements.map((logement, e) =>{
+               return <Thumb  key={e}  logement={logement}/>
             })}
         </div>
     )

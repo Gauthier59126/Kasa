@@ -7,15 +7,6 @@ import userEvent from '@testing-library/user-event';
 
 function Collapse2(props){
 
-/*    const toggles = document.querySelectorAll('.faq-toggle')
-
-    toggles.forEach(toggle => {
-        console.log(toggles)
-       toggle.addEventListener('click', () =>{
-           toggle.parentNode.classList.toggle('active')
-       }) 
-    })
-*/
     const [active, setActive] = useState(false)
 
     return (
@@ -25,8 +16,8 @@ function Collapse2(props){
                 <h3 className='faq-title' onClick={()=>{setActive(!active)}}>{props.title}</h3>
                 <p className='faq-text'>{props.description}</p>
                 <button  className='faq-toggle'>
-                    <img className='chevronD' src={chevronDown} alt="chevron-down"/>
-                    <img className='chevronU' src={chevronUp} alt="chevron-up"/>
+                    <img  className='chevronD modif' src={chevronDown} alt="chevron-down"/>
+                    <img className='chevronU modif' src={chevronUp} alt="chevron-up"/>
                 </button>
             </div>
         </div>

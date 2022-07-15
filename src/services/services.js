@@ -12,3 +12,5 @@ function getHouseData(id){
 }
 
 export {getData, getHouseData}
+
+

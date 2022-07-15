@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 import ErrorPage from './pages/ErrorPage';
 import './fonts/typo.css'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Collapse2 from './components/Collapse2';
 
 function App(props) {
   return (

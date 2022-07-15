@@ -3,10 +3,7 @@ import "../style/Tag.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-function Star(props){
-
-    
-    console.log(props)
+function Star(props){    
 
     function Rate (){
 
@@ -19,14 +16,12 @@ function Star(props){
         for (let index = props.rating; index < 5; index++) {
             rates.push(<FontAwesomeIcon size="2x" color='grey'  icon={faStar} />)            
         }
-
         return rates
     }
 
     return (
-
         <div className="div-star">
-            <Rate/>
+            <Rate key={props}/>
         </div>
     )
 }
