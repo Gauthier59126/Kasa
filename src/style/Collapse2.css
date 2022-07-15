@@ -13,9 +13,14 @@ img{
     width: 100%;
     border-radius: 5px;
     padding-left: 0px;
-    position: relative;
     overflow: hidden;
     transition: 0.3s ease;
+
+}
+.faq .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
 }
 
 .faq.active{
@@ -25,11 +30,9 @@ img{
 }
 
 .faq-title{
-    width: 650px;
     height: 30px;
     align-items: center;
     margin:  0;
-    background-color: #FF6060;
     padding-left: 10px;
     padding-top: 10px;
     color: white;
@@ -56,34 +59,22 @@ img{
     align-items: center;
     justify-content: center;
     padding: 0;
-    position: relative;
     bottom: 140px;
     right: 20px;
 }
 
-.chevronD{
-    position: absolute;
-    top: 97px;
-    left: 650px;
-}
-
-.chevronU{
-    position: absolute;
-    top: 10px;
-    left: 650px;
-}
-
+/*
 .faq-toggle .chevronU{
     display: none;
-}
+}*/
 
 .faq.active .faq-toggle .chevronU{
     display: block;
 }
-
+/*
 .faq.active .faq-toggle .chevronD{
     display: none;
-}
+}*/
 
 .faq.active .faq-toggle{
 }
@@ -91,7 +82,6 @@ img{
 @media all and (max-width: 415px){
 
     .faq-title{
-        width: 350px;
         height: 30px;
     }
 
@@ -119,24 +109,12 @@ img{
     .faq.active{
         width: 100%;
     }
-
-    .chevronD{
-        position: absolute;
-        top: 97px;
-        left: 345px;
-    }
-    
-    .chevronU{
-        position: absolute;
-        top: -115px;
-        left: 345px;
-    }
 }
 
 @media all and (min-width: 416px) and (max-width:820px){
 
     .faq-title{
-        width: 100%;
+
     }
 
     .faq-text{
@@ -163,20 +141,21 @@ img{
         width: 100%;
     }
 
-    .chevronD{
-        position: absolute;
-        top: 97px;
-        right: 0;
+    .active .chevronD.up{
+        display: block
     }
-    
-    .chevronU{
-        position: relative;
-        bottom: 300px;
-        right: 0;
+
+    .chevronD.up {
+        display: none;
     }
 
     .faq.active .faq-toggle .chevronU{
         display: block;
         bottom: 20px;
+    }
+
+    .faq .head{
+        display: flex;
+        justify-content: space-between;
     }
 }

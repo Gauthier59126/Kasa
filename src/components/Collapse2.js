@@ -13,12 +13,16 @@ function Collapse2(props){
 
         <div className='faq-container page'>
             <div className={`faq ${active?"active":''}`}> 
-                <h3 className='faq-title' onClick={()=>{setActive(!active)}}>{props.title}</h3>
+                <div className='head' onClick={()=>{setActive(!active)}}> 
+                    <h3 className='faq-title'>{props.title}</h3>
+                    <button  className='faq-toggle'>
+                    <img  className='chevronD modif' src={active? chevronUp : chevronDown} alt= {active?"chevronUp ": "chevronDown"}/>
+                        { /* <img className='chevronD up modif' src={chevronUp} alt="chevron-up"/>*/}
+                    </button>
+                </div>
+                
                 <p className='faq-text'>{props.description}</p>
-                <button  className='faq-toggle'>
-                    <img  className='chevronD modif' src={chevronDown} alt="chevron-down"/>
-                    <img className='chevronU modif' src={chevronUp} alt="chevron-up"/>
-                </button>
+
             </div>
         </div>
     )

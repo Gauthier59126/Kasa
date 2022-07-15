@@ -10,18 +10,18 @@ function Star(props){
         const rates = [];
 
         for (let index = 0; index < props.rating; index++) {
-            rates.push(<FontAwesomeIcon size="2x"  icon={faStar} />)            
+            rates.push(<FontAwesomeIcon key={index} size="2x"  icon={faStar} />)            
         }
 
         for (let index = props.rating; index < 5; index++) {
-            rates.push(<FontAwesomeIcon size="2x" color='grey'  icon={faStar} />)            
+            rates.push(<FontAwesomeIcon key={index} size="2x" color='grey'  icon={faStar} />)            
         }
         return rates
     }
 
     return (
         <div className="div-star">
-            <Rate key={props}/>
+            <Rate />
         </div>
     )
 }
