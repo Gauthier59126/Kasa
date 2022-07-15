@@ -60,23 +60,11 @@ img{
     justify-content: center;
     padding: 0;
     bottom: 140px;
-    right: 20px;
+    margin-right: 10px;
 }
-
-/*
-.faq-toggle .chevronU{
-    display: none;
-}*/
 
 .faq.active .faq-toggle .chevronU{
     display: block;
-}
-/*
-.faq.active .faq-toggle .chevronD{
-    display: none;
-}*/
-
-.faq.active .faq-toggle{
 }
 
 @media all and (max-width: 415px){
